@@ -1,0 +1,99 @@
+{
+  "listings": [
+    {
+      "id": "L-1001",
+      "title": "MacBook Air M2 13-inch",
+      "description": "Lightly used laptop, ideal for study and coding. Includes charger and protective sleeve.",
+      "category": "Electronics",
+      "price": 690,
+      "condition": "Good",
+      "location": "Dortmund",
+      "seller": "Alex M.",
+      "sellerId": "member-demo",
+      "createdAt": "2026-08-05T10:15:00.000Z",
+      "status": "active",
+      "views": 128,
+      "image": "\ud83d\udcbb"
+    },
+    {
+      "id": "L-1002",
+      "title": "Bicycle \u2014 city commuter",
+      "description": "Reliable 7-speed city bike with front basket and recently serviced brakes.",
+      "category": "Bikes",
+      "price": 180,
+      "condition": "Good",
+      "location": "Dortmund",
+      "seller": "Mina K.",
+      "sellerId": "member-2",
+      "createdAt": "2026-08-08T08:40:00.000Z",
+      "status": "active",
+      "views": 94,
+      "image": "\ud83d\udeb2"
+    },
+    {
+      "id": "L-1003",
+      "title": "Web Development Textbook Bundle",
+      "description": "Three course-relevant books covering HTML/CSS, JavaScript and web architecture.",
+      "category": "Books",
+      "price": 45,
+      "condition": "Like new",
+      "location": "Dortmund",
+      "seller": "Sam R.",
+      "sellerId": "member-3",
+      "createdAt": "2026-08-09T16:25:00.000Z",
+      "status": "active",
+      "views": 61,
+      "image": "\ud83d\udcda"
+    },
+    {
+      "id": "L-1004",
+      "title": "IKEA Desk + Desk Lamp",
+      "description": "Compact white study desk with matching adjustable lamp. Pickup only.",
+      "category": "Furniture",
+      "price": 55,
+      "condition": "Fair",
+      "location": "Dortmund",
+      "seller": "Noah T.",
+      "sellerId": "member-4",
+      "createdAt": "2026-08-11T12:05:00.000Z",
+      "status": "active",
+      "views": 72,
+      "image": "\ud83e\ude91"
+    },
+    {
+      "id": "L-1005",
+      "title": "Noise-cancelling headphones",
+      "description": "Over-ear headphones with USB-C charging. Some cosmetic wear but fully functional.",
+      "category": "Electronics",
+      "price": 85,
+      "condition": "Fair",
+      "location": "Dortmund",
+      "seller": "Taylor J.",
+      "sellerId": "member-5",
+      "createdAt": "2026-08-12T09:10:00.000Z",
+      "status": "active",
+      "views": 49,
+      "image": "\ud83c\udfa7"
+    }
+  ],
+  "inquiries": [
+    {
+      "id": "I-2001",
+      "listingId": "L-1001",
+      "from": "Jordan P.",
+      "fromId": "visitor-demo",
+      "message": "Hi! Is the laptop still available, and could I collect it this weekend?",
+      "createdAt": "2026-08-12T13:00:00.000Z",
+      "status": "open"
+    }
+  ],
+  "reports": [
+    {
+      "id": "R-3001",
+      "listingId": "L-1004",
+      "reason": "Possible duplicate / misleading description",
+      "createdAt": "2026-08-13T09:30:00.000Z",
+      "status": "open"
+    }
+  ]
+}

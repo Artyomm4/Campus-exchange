@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Campus Exchange Hub — a front-end classified marketplace prototype.">
+<title>Post listing · Campus Exchange Hub</title>
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<header class="site-header">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="nav-wrap">
+    <a class="brand" href="index.html" aria-label="Campus Exchange Hub home">
+      <span class="brand-mark">CX</span><span>Campus Exchange Hub</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a class="" href="browse.html">Browse</a>
+      <a class="" href="favorites.html">Favorites</a>
+      <a class="active" href="create.html" data-role="member">Post listing</a>
+      <a class="" href="dashboard.html" data-role="member">My area</a>
+      <a class="" href="moderator.html" data-role="moderator">Moderation</a>
+    </nav>
+    <div class="role-pill" title="Demo role switch — no real authentication is used">
+      <span class="badge-dot" aria-hidden="true"></span>
+      <label for="roleSelect" class="hidden">Current role</label>
+      <select id="roleSelect">
+        <option value="visitor">Visitor</option>
+        <option value="member">Member</option>
+        <option value="moderator">Moderator</option>
+      </select>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<div class="container">
+  <div class="section-head"><div><div class="eyebrow muted">Member area</div><h1 id="formTitle">Post a listing</h1><p id="formIntro" class="muted">Add a clear description and a fair price. Your listing will be stored in this browser.</p></div></div>
+  <div id="roleNotice"></div>
+  <form id="listingForm" class="card" novalidate>
+    <input type="hidden" id="listingId">
+    <div class="form-grid two">
+      <div class="field"><label for="title">Title *</label><input id="title" maxlength="70" required><div id="titleError" class="error"></div></div>
+      <div class="field"><label for="price">Price (€) *</label><input id="price" type="number" min="0" max="100000" step="0.01" required><div id="priceError" class="error"></div></div>
+      <div class="field"><label for="categorySelect">Category *</label><select id="categorySelect" required><option value="">Choose…</option><option>Books</option><option>Electronics</option><option>Furniture</option><option>Bikes</option><option>Clothing</option><option>Other</option></select><div id="categoryError" class="error"></div></div>
+      <div class="field"><label for="condition">Condition *</label><select id="condition" required><option value="">Choose…</option><option>Like new</option><option>Good</option><option>Fair</option><option>Used</option></select><div id="conditionError" class="error"></div></div>
+      <div class="field"><label for="location">Location *</label><input id="location" maxlength="60" required placeholder="e.g. Dortmund"><div id="locationError" class="error"></div></div>
+      <div class="field"><label for="seller">Display name *</label><input id="seller" maxlength="40" required placeholder="e.g. Alex M."><div id="sellerError" class="error"></div></div>
+    </div>
+    <div class="field description-field"><label for="description">Description *</label><textarea id="description" maxlength="600" required placeholder="Describe the item honestly and clearly."></textarea><div id="descriptionError" class="error"></div><div class="help">Maximum 600 characters. User text is rendered safely rather than injected as HTML.</div></div>
+    <div id="formMessage"></div>
+    <div class="form-actions">
+      <button class="btn btn-primary" type="submit">Save listing</button>
+      <a class="btn btn-secondary" href="dashboard.html">Cancel</a>
+    </div>
+  </form>
+</div>
+
+</main>
+<footer>
+  <div class="footer-inner">
+    <span>Campus Exchange Hub · Web Application &amp; Software Architecture</span>
+    <span>Front-end prototype · localStorage persistence</span>
+  </div>
+</footer>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

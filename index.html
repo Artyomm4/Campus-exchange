@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Campus Exchange Hub — a front-end classified marketplace prototype.">
+<title>Home · Campus Exchange Hub</title>
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<header class="site-header">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="nav-wrap">
+    <a class="brand" href="index.html" aria-label="Campus Exchange Hub home">
+      <span class="brand-mark">CX</span><span>Campus Exchange Hub</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a class="" href="browse.html">Browse</a>
+      <a class="" href="favorites.html">Favorites</a>
+      <a class="" href="create.html" data-role="member">Post listing</a>
+      <a class="" href="dashboard.html" data-role="member">My area</a>
+      <a class="" href="moderator.html" data-role="moderator">Moderation</a>
+    </nav>
+    <div class="role-pill" title="Demo role switch — no real authentication is used">
+      <span class="badge-dot" aria-hidden="true"></span>
+      <label for="roleSelect" class="hidden">Current role</label>
+      <select id="roleSelect">
+        <option value="visitor">Visitor</option>
+        <option value="member">Member</option>
+        <option value="moderator">Moderator</option>
+      </select>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<div class="container">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-card">
+      <div class="eyebrow">A quieter way to buy, sell &amp; exchange</div>
+      <h1 id="hero-title">Good stuff deserves a second owner.</h1>
+      <p class="lead">A small, security-conscious campus marketplace for textbooks, furniture, bikes and everyday student essentials.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="browse.html">Explore listings</a>
+        <a class="btn btn-ghost" href="create.html">Post something</a>
+      </div>
+    </div>
+    <aside class="card">
+      <div class="eyebrow brand-eyebrow">Built for the brief</div>
+      <h2>Simple on the surface. Thoughtful underneath.</h2>
+      <p class="muted">Search and filtering, role-based UI, complete listing CRUD, localStorage persistence, validation and XSS-safe rendering are all part of the prototype.</p>
+      <div class="stat-grid">
+        <div class="stat"><strong id="homeCount">—</strong><span class="muted">active listings</span></div>
+        <div class="stat"><strong>3</strong><span class="muted">roles</span></div>
+        <div class="stat"><strong>6</strong><span class="muted">categories</span></div>
+        <div class="stat"><strong>1</strong><span class="muted">simple workflow</span></div>
+      </div>
+    </aside>
+  </section>
+
+  <section aria-labelledby="how-title">
+    <div class="section-head"><div><div class="eyebrow muted">A simple flow</div><h2 id="how-title">Everything important is close by.</h2></div></div>
+    <div class="grid cards-3">
+      <article class="card"><div class="listing-icon">01</div><h3>Find</h3><p class="muted">Filter by keyword, category and price without leaving the page.</p></article>
+      <article class="card"><div class="listing-icon">02</div><h3>Check</h3><p class="muted">Open a detail view, inspect the seller context and send an inquiry.</p></article>
+      <article class="card"><div class="listing-icon">03</div><h3>Exchange</h3><p class="muted">Members can manage their own listings and keep useful items in favorites.</p></article>
+    </div>
+  </section>
+</div>
+
+</main>
+<footer>
+  <div class="footer-inner">
+    <span>Campus Exchange Hub · Web Application &amp; Software Architecture</span>
+    <span>Front-end prototype · localStorage persistence</span>
+  </div>
+</footer>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
